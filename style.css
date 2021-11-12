@@ -1,0 +1,146 @@
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+    ::selection {
+  color: rgb(9,213,213);
+  background: rgb(9,93,93);
+}
+    body {
+        background: linear-gradient(to left, #4e0083, #660061);
+        color: snow;
+        font-family: Nunito;
+        font-weight: 600;
+        line-height: 1.8;
+        margin:0;
+    }
+    button {
+    color: snow;
+        font-family: Nunito;
+        font-weight: 600;
+    }
+    h1 {
+        font-family: Lobster;
+    }
+    a {
+        text-decoration: none;
+        color: snow;
+    }
+    a:hover {
+        color: cornsilk;
+    }
+    iframe {
+      width: 90%; height: 500px; border-radius: 10px;border:0;
+    }
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-left: 5%;
+  width: 90%;
+}
+
+.flex-item-left {
+  padding: 10px;
+  flex: 25%;
+  text-align: justify;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 60%;
+  text-align: justify;
+}
+
+.flex-item-right, flex-item-left {z-index: -1;}
+
+details > summary {
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+text-align: center;    
+}
+.nav {
+    text-align: center;
+    margin: auto;
+    z-index: 1;
+}
+#demo {
+position: fixed;
+left: -100%;
+transition: 1s ease-in-out;
+top: 40px;width: 100%;background: rgba(109,0,189,1);height: 100%;top:0;background-attachment:fixed;background-size:cover;
+}
+.w  {
+font-size: 25px;position: fixed;padding: 10px;
+}
+.e {
+top: 72px;
+}
+
+.f {
+top: 120px;
+}
+
+.g {
+top: 168px;
+}
+
+.h {
+top: 220px;
+}
+
+.e, .f, .g, .h {
+margin-left: 15%;
+transition: 1s;
+}
+
+.e:hover {
+margin-left: 18%;
+transition: 1s;
+}
+
+.f:hover {
+margin-left: 18%;
+transition: 1s;
+}
+
+.g:hover {
+margin-left: 18%;
+transition: 1s;
+}
+
+.h:hover {
+margin-left: 18%;
+transition: 1s;
+}
+
+#i {
+  position: fixed;
+ bottom: 0px;
+  right: -110%;
+border-bottom: 100vh solid #333;
+  border-left: 100vw solid transparent;
+  height: 0;
+  width: 200px;
+  transition: 1s;
+  color: #333;
+  z-index: -100;
+}
+
+button {
+cursor: pointer;
+}
+
+iframe, input {z-index: -100;}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+</style>
