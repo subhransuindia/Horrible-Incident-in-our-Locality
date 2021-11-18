@@ -1,57 +1,221 @@
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins|Lobster|Nunito|Permanent+Marker">
     <meta charset="UTF-8">
     <link rel="icon" href="https://avatars.githubusercontent.com/u/90274551?v=4" type="image/gif" sizes="17x17">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <title>Horrible Incident in our Locality</title>
-</head>
+<style>
+html {
+        scroll-behavior: smooth;
+    }
+    ::selection {
+  color: rgb(9,213,213);
+  background: rgb(9,93,93);
+}
+    body {
+        background: snow;
+        color: rgb(23,23,23);
+        font-family: Nunito;
+        font-weight: 600;
+        line-height: 1.8;
+        margin:0;
+        overflow-x: hidden;
+        transition: 0.3s;
+    }
+    button {
+    color: rgb(23,23,23);
+        font-family: Nunito;
+        font-weight: 600;
+    }
+    h1 {
+        font-family: Lobster;
+        text-align: center;
+    }
+    a {
+        text-decoration: none;
+       color: rgb(23,23,23);
+    }
+    a:hover {
+       color: rgb(123,123,123);
+    }
+    iframe {
+      width: 90%; height: 500px; border-radius: 10px;border:0;
+    }
+* {
+  box-sizing: border-box;
+}
 
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-left: 5%;
+  width: 90%;
+}
+
+.flex-item-left {
+  padding: 10px;
+  flex: 25%;
+  text-align: justify;
+}
+
+.flex-item-right {
+  padding: 10px;
+  flex: 60%;
+  text-align: justify;
+}
+
+.flex-item-right, .flex-item-left {margin-top: 50px;}
+
+details > summary {
+    list-style: none;
+}
+h1,h2,h3,h4,h5,h6 {
+
+}
+.nav {
+    text-align: center;
+    margin: auto;
+    z-index: 1;
+}
+#demo {
+position: fixed;
+left: -100%;
+transition: 1s ease-in-out;
+top: 40px;width: 100%;background: cornsilk;height: 100%;top:0;background-attachment:fixed;background-size:cover;
+}
+.w  {
+font-size: 25px;position: fixed;padding: 10px;
+}
+.e {
+top: 72px;
+}
+
+.f {
+top: 120px;
+}
+
+.g {
+top: 168px;
+}
+
+.h {
+top: 220px;
+}
+
+.e, .f, .g, .h {
+margin-left: 15%;
+transition: 1s;
+}
+
+.e:hover {
+margin-left: 18%;
+transition: 1s;
+}
+
+.f:hover {
+margin-left: 18%;
+transition: 1s;
+}
+
+.g:hover {
+margin-left: 18%;
+transition: 1s;
+}
+
+.h:hover {
+margin-left: 18%;
+transition: 1s;
+}
+
+#i {
+  position: fixed;
+ bottom: 0px;
+  right: -220%;
+border-bottom: 200vh solid dodgerblue;
+  border-left: 200vw solid transparent;
+  border-radius: 50%;
+  height: 0;
+  width: 200px;
+  transition: 1s;
+  color: #333;
+  z-index: -200;
+}
+
+button {
+cursor: pointer;
+color: black;
+}
+
+button:hover {
+color: rgb(123,123,123);
+}
+
+iframe, input {z-index: -100;}
+
+.dark-mode {
+  background-color: rgb(23,23,23);
+  color: white;
+}
+iframe {box-shadow: 2px 2px 10px black;}
+
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+</style>
+</head>
 <body id="body">
-    <button style="top:15px;left: 15px;position: fixed;padding: 10px;background-color: #440041;border-radius: 10px;box-shadow: 2px 2px 10px black;text-align: center;border:0;" onclick="myFunction()">☰ Horrible Incident in our Locality</button>
+
+<nav id="nav" style="top:0px;left: 0px;width: 100%;position: fixed;border-bottom: 2px solid dodgerblue;padding: 16px;background-image: url(https://github.com/subhransuindia/Pictures/blob/main/1nav.jpg?raw=true);background-attachment: fixed;">
+
+<tagname style="text-align: center;color: black;">Horrible Incident in our Locality
+</tagname>
+
+<button style="padding-top: 2.5px;border-radius: 10px;text-align: center;border:0;color: black;background: transparent;float:right;" onclick="myFunction()">☰</button>
+
+<button style="padding-top: 5px;text-align: justify;background-color: transparent; border:0;color: rgb(23,23,23);cursor: pointer;font-size: 15px;float:right;" class="material-icons" onclick="meFunction()">dark_mode</button>
+
+</nav>
+
 <div id="demo">
- <button style="position: fixed;padding: 10px;background-color: #440041;border-radius: 10px;box-shadow: 2px 2px 10px black;text-align: center;border:0;margin-left: 85%;top:10px;" onclick="maFunction()">X</button>
+ <button style="position: fixed;padding: 10px;text-align: center;border:0;margin-left: 85%;top:10px;background: transparent;" onclick="maFunction()">X</button>
  <a class="w e" href="https://subhransuindia.github.io/homepage.github.io/" ><p>Home</p></a>
             <a class="w f" href="https://subhransuindia.wordpress.com"><p>Blog</p></a>
             <a class="w g" href="https://subhransuindia.github.io/more.github.io/"><p>More</p></a>
             
             <a class="w h" href="https://github.com/subhransuindia"><p class="fa fa-github"></p></a>
            
-            <button id="demu" style="text-align: justify;background-color: transparent; border:0;color: white;cursor: pointer;font-size: 20px;" onclick="window.print()"><a class="fa fa-print"></a></button>
+            <button id="demu" style="text-align: justify;background-color: transparent; border:0;color: rgb(23,23,23);cursor: pointer;font-size: 20px;" onclick="window.print()"><a class="fa fa-print"></a></button>
             
             
-            <button style="text-align: justify;background-color: transparent; border:0;color: white;cursor: pointer;font-size: 15px;" onclick="meFunction()">Change Color</button>
-            
-            <button style="text-align: justify;background-color: transparent; border:0;color: white;cursor: pointer;font-size: 15px;" onclick="muFunction()">Default</button>
             
             <div id="i">
               .
               </div>
 </div>
 
+<a href="#" style="position: fixed;bottom: 15px;right: 15px;backdrop-filter: blur(5px);background-color: rgba(255,255,255,0.5);padding: 5px;border-radius: 10px;">↑</a>
 
-
-
-    <details style="bottom:15px;right: 15px;position: fixed;text-align: center;">
-        <summary style="cursor: pointer;"><a href="https://subhransuindia.github.io/homepage.github.io/"><img style="width: 40px;border-radius: 50%;" src="https://avatars.githubusercontent.com/u/90274551?v=4"></a></summary>
-    </details>
-
-    <div style="text-align: center;margin-top: 250px;margin-bottom: 150px;">
-        <h1 style="font-size: 48px;">Horrible Incident in our Locality</h1>
-        <hr style="width: 60%; margin: auto;margin-bottom: 10px;">
-        <p style="background: rgba(0,0,0,0.3);padding: 10px; border-radius: 10px; border: 2px solid black;width: 300px;margin: auto;">Website Initiated By Subhransu Patra</p>
-    </div>
+<div style="background: url(https://github.com/subhransuindia/Pictures/blob/main/he&h1&he.jpg?raw=true);padding-top: 170px;padding-bottom: 170px;margin-top: 50px;background-attachment: fixed;background-size: cover;padding-left: 15%; ">
+<h1 style="font-size: 48px;color: white;text-align: left;">Horrible Incident in our Locality</h1>
+<hr style="margin-right: 30%;">
+<p style="color: white;">Website Initiated By Subhransu Patra</p>
+</div>
 
 <div class="flex-container">
   <div class="flex-item-left">
-      <details data-aos="flip-left" style="background: rgba(0, 0, 0, 0.5);border-radius: 10px;border: 2px solid white;padding: 10px;position: sticky;">
+      <details style="background: rgba(0, 0, 0, 0.5);border-radius: 10px;border: 2px solid white;padding: 10px;position: sticky;">
         <summary style="cursor: pointer;"><h2>Table of Content</h2></summary>
         <li><a href="#a">Introduction</a></li><br>
         <li><a href="#b">March 31, Fine until Evening</a></li><br>
@@ -60,7 +224,7 @@
         <li><a href="#e">Comments by me</a></li><br>
     </details>
   </div>
-  <div data-aos="flip-right" class="flex-item-right">
+  <div class="flex-item-right">
       <h1 id="a" class="d">Introduction</h1>
       <p>Living in Kolkata for almost 4 years or it is almost 5 years no its 4, or 5. (A Hour Later) Finally it is.. 137,548,800 seconds (approximate estimation) (Basically it is 4 years 4 months and 9 days). So living in Kolkata was fine for me. So I didn’t faced any ‘threating thing’ until March 31 2021. Yes, it occurred recently that is, 223,200 minutes ago (‘Iske website ko dislike marenge’). Basically it was 5 months ago. So let’s begin… Note: - This article might be short..</p>
       <h1 id="b">March 31, Fine until Evening</h1>
@@ -75,10 +239,10 @@
   </div>
 </div>
 
-<div style="border-top-left-radius: 20px;border-top-right-radius: 20px;background-color: rgba(70,0,66,0.5);padding: 10px;text-align: center;box-shadow: 2px -2px 10px black">
-<iframe style="z-index: -100;" data-aos="flip-up"  src="https://subhransuindia.wordpress.com/"></iframe>
-<iframe style="z-index: -100;" data-aos="flip-up"  src="https://docs.google.com/forms/d/e/1FAIpQLSd9hO-OQwpi2BEeHo1S2y7VoM7hUnYs12egqA4290T-M5Fcig/viewform?usp=sf_link"></iframe>
-<div data-aos="flip-up"  style="text-align: center;padding: 16px;margin:0;margin-top: 20px;">
+<div style="border-top-left-radius: 20px;border-top-right-radius: 20px;background: url(https://github.com/subhransuindia/Pictures/blob/main/foot.jpg?raw=true);background-attachment: fixed;background-size: cover;padding: 10px;text-align: center;box-shadow: 2px -2px 10px black;color: black;">
+<iframe style="z-index: -100;"   src="https://subhransuindia.wordpress.com/"></iframe>
+<iframe style="z-index: -100;"   src="https://docs.google.com/forms/d/e/1FAIpQLSd9hO-OQwpi2BEeHo1S2y7VoM7hUnYs12egqA4290T-M5Fcig/viewform?usp=sf_link"></iframe>
+<div  style="text-align: center;padding: 16px;margin:0;margin-top: 20px;">
 <input placeholder="Search if you want.." style="z-index: -100;border-radius: 60px;border: 2px solid black;padding: 16px;width: 50%;font-family: Poppins;font-size: large;"> <tagname style="padding: 16px;background-color: rgba(9,225,9,0.5);border-radius: 50%;">Go</tagname>
 </div>
 <div style="text-align: center; width: 75%;margin-left: 12.5%;">
@@ -110,32 +274,20 @@
             <button id="demu" style="text-align: justify;background-color: transparent; border:0;color: white;cursor: pointer;font-size: 20px;" onclick="window.print()"><a class="fa fa-print"></a></button>
 </div>
 
-
 <script>
 
 function maFunction() {
 let x = document.getElementById("demo")
 x.style.left = "-100%";
 let y = document.getElementById("i")
-y.style.right = "-110%";
+y.style.right = "-220%";
 }
 
 function meFunction() {
-let x = document.getElementById("body")
-x.style.background = "linear-gradient(rgb(64,0,64), rgb(143,0,64), rgb(242,115,0))";
-let y = document.getElementById("demo")
-y.style.left = "-100%";
-let z = document.getElementById("i")
-z.style.right = "-110%";
-}
-
-function muFunction() {
-let x = document.getElementById("body")
-x.style.background = "linear-gradient(to left, #4e0083, #660061)";
-let y = document.getElementById("demo")
-y.style.left = "-100%";
-let z = document.getElementById("i")
-z.style.right = "-110%";
+var element = document.body;
+  element.classList.toggle("dark-mode");
+  var element = document.div;
+  element.classList.toggle("dark-mode");
 }
 
 function myFunction() {
@@ -145,16 +297,10 @@ let y = document.getElementById("i")
 y.style.right = "0";
 }
 
-
-
-</script>
-<script>
-AOS.init({
-  duration: 1200,
-})
-</script>
-<script>
 alert('This is my New Website design... I hope you liked it... used some javascript also...')
+
+AOS.init();
+
 </script>
 
 </body>
